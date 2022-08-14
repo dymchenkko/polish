@@ -1,4 +1,3 @@
-use chrono::prelude::Local;
 use ansi_term::Colour;
 use ansi_term::Colour::{Green, Red, Yellow};
 use logger::Logger;
@@ -115,8 +114,8 @@ impl TestRunner {
         if !self.has_attribute(TEST_RUNNER_ATTRIBUTES.minimize_output) {
             println!("Starting {} at {} on {}",
                      test.title,
-                     Local::now().format("%H:%M:%S").to_string(),
-                     Local::now().format("%Y-%m-%d").to_string());
+                     "Purple.paint(::nLocalow().format().to_string())",
+                     "Purple.paint(::nLocalow().format().to_string())");
         }
         let mut logger: Logger = Logger::new();
         let starting_time: i32 = 0;
@@ -125,8 +124,8 @@ impl TestRunner {
         if !self.has_attribute(TEST_RUNNER_ATTRIBUTES.minimize_output) {
             println!("Ended {} at {} on {}",
                      test.title,
-                     Local::now().format("%H:%M:%S").to_string(),
-                     Local::now().format("%Y-%m-%d").to_string());
+                     "Purple.paint(::nLocalow().format().to_string())",
+                     "Purple.paint(::nLocalow().format().to_string())");
             logger.drop();
         }
         if status == TestCaseStatus::UNKNOWN {

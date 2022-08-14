@@ -1,4 +1,3 @@
-use chrono::prelude::Local;
 use ansi_term::Colour::{Green, Red, Cyan, Yellow, Purple};
 
 pub enum LogType {
@@ -43,7 +42,7 @@ impl Logger {
             }
         };
         println!("{} {}: {}",
-                 Purple.paint(Local::now().format("%Y-%m-%d %H:%M:%S").to_string()),
+                 "Purple.paint(::nLocalow().format().to_string())",
                  mark,
                  message);
     }

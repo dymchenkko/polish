@@ -15,5 +15,4 @@ license = "MIT"
 travis-ci = { repository = "Alkass/polish" }
 
 [dependencies]
-chrono = "0.3.0"
 ansi_term = "0.9.0"
