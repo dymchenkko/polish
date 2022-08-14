@@ -1,4 +1,3 @@
-use time;
 use chrono::prelude::Local;
 use ansi_term::Colour;
 use ansi_term::Colour::{Green, Red, Yellow};
@@ -120,9 +119,9 @@ impl TestRunner {
                      Local::now().format("%Y-%m-%d").to_string());
         }
         let mut logger: Logger = Logger::new();
-        let starting_time: i32 = time::now().tm_nsec;
+        let starting_time: i32 = 0;
         let mut status: TestCaseStatus = (test.exec)(&mut logger);
-        let ending_time: i32 = time::now().tm_nsec;
+        let ending_time: i32 = 0;
         if !self.has_attribute(TEST_RUNNER_ATTRIBUTES.minimize_output) {
             println!("Ended {} at {} on {}",
                      test.title,
