@@ -8,6 +8,7 @@ pub enum TestCaseStatus {
     FAILED,
     SKIPPED,
     UNKNOWN,
+    NO,
 }
 
 pub struct TestCase {
